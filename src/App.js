@@ -15,10 +15,10 @@ const App = () => {
       <Banner />
       <Nav />
       <About />
-      <Services />
+      <Services></Services>
       <Work />
       <Contact />
-      <div className='h-[4000px]'></div>
+      <div ></div>
     </div>
   );
 };

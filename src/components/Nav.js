@@ -1,12 +1,13 @@
 import React from "react";
 // import icons
-import { BiHomeAlt, BiUser } from "react-icons/bi";
+import { BiAbacus, BiHomeAlt, BiUser } from "react-icons/bi";
 import {
   BsClipboardData,
   BsBriefcase,
   
   BsChatSquareText,
 } from "react-icons/bs";
+import { FaAddressBook, FaClipboardCheck } from "react-icons/fa";
 // link
 import { Link } from "react-scroll";
 
@@ -43,9 +44,8 @@ const Nav = () => {
           spy={true}
           className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
         >
-          <BsClipboardData></BsClipboardData>
+          <FaClipboardCheck></FaClipboardCheck>
         </Link>
-
         <Link
           to="work"
           activeClass="active"

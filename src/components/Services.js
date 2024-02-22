@@ -2,31 +2,35 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="text-gray-500 body-font">
+    <section id="services" className="text-gray-500 body-font ">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col w-full mb-20">
-          <h1 className=" text-4xl font-medium  title-font flex  mb-4 text-white">
-            Our Services
+          <h1 className="text-4xl font-medium title-font flex mb-4 text-white">
+           OUR SERVICES :
           </h1>
           <p className="lg:w-full mx-auto leading-relaxed text-2xl">
-            Explore our range of services designed to meet your needs and
-            exceed your expectations.
+            Showcase your skills and expertise as a full-stack web developer
+            with these featured services.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        {/* Added border outline to the category div */}
+        <div className="flex flex-wrap -m-4 bg-transparent outline outline-1 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative mb-10">
           <div className="p-4 lg:w-1/3">
-            <div className="h-full bg-transparent outline outline-1  bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div>
               <h2 className="tracking-widest text-xl title-font font-medium text-white mb-1">
-                CATEGORY
+                Frontend Development
               </h2>
-              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                Service 1
+              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-500 mb-3">
+                Responsive Web Design
               </h1>
               <p className="leading-relaxed mb-3">
-                Description of Service 1 goes here. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                Create visually appealing and user-friendly websites optimized
+                for all devices.
               </p>
-              <a className="text-indigo-500 inline-flex items-center">
+              <a
+                href="/frontend"
+                className="text-indigo-500 inline-flex items-center"
+              >
                 Learn More
                 <svg
                   className="w-4 h-4 ml-2"
@@ -44,18 +48,21 @@ const Services = () => {
             </div>
           </div>
           <div className="p-4 lg:w-1/3">
-            <div className="h-full bg-transparent outline outline-1 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div>
               <h2 className="tracking-widest text-xl title-font font-medium text-white mb-1">
-                CATEGORY
+                Backend Development
               </h2>
-              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                Service 2
+              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-500 mb-3">
+                API Development
               </h1>
               <p className="leading-relaxed mb-3">
-                Description of Service 2 goes here. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                Build robust APIs to handle data communication between the
+                frontend and backend.
               </p>
-              <a className="text-indigo-500 inline-flex items-center">
+              <a
+                href="/backend"
+                className="text-indigo-500 inline-flex items-center"
+              >
                 Learn More
                 <svg
                   className="w-4 h-4 ml-2"
@@ -73,18 +80,21 @@ const Services = () => {
             </div>
           </div>
           <div className="p-4 lg:w-1/3">
-            <div className="h-full bg-transparent outline outline-1 bg-opacity-50 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div>
               <h2 className="tracking-widest text-xl title-font font-medium text-white mb-1">
-                CATEGORY
+                Portfolio
               </h2>
-              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">
-                Service 3
+              <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-500 mb-3">
+                Showcase Your Work
               </h1>
               <p className="leading-relaxed mb-3">
-                Description of Service 3 goes here. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                Display your projects, skills, and achievements in an
+                impressive portfolio.
               </p>
-              <a className="text-indigo-500 inline-flex items-center">
+              <a
+                href="/portfolio"
+                className="text-indigo-500 inline-flex items-center"
+              >
                 Learn More
                 <svg
                   className="w-4 h-4 ml-2"
