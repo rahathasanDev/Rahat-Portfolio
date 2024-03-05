@@ -1,13 +1,13 @@
 import React from "react";
 // import icons
-import { BiAbacus, BiHomeAlt, BiUser } from "react-icons/bi";
+import {  BiHomeAlt, BiUser } from "react-icons/bi";
 import {
-  BsClipboardData,
+
   BsBriefcase,
   
   BsChatSquareText,
 } from "react-icons/bs";
-import { FaAddressBook, FaClipboardCheck } from "react-icons/fa";
+import {  FaClipboardCheck } from "react-icons/fa";
 // link
 import { Link } from "react-scroll";
 

@@ -1,9 +1,17 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 const Services = () => {
   return (
     <section id="services" className="text-gray-500 body-font ">
-      <div className="container px-5 py-24 mx-auto">
+      <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+             
+            >
+              <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col w-full mb-20">
           <h1 className="text-4xl font-medium title-font flex mb-4 text-white">
            OUR SERVICES :
@@ -113,6 +121,9 @@ const Services = () => {
           </div>
         </div>
       </div>
+            
+            </motion.div>
+      
     </section>
   );
 };
