@@ -7,7 +7,7 @@ const Contact = () => {
     <div className='section' id='contact'>
       <div className="container mx-auto">
         <motion.h1
-          variants={fadeIn("up", 0.3)}
+          variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
