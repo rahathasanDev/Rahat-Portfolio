@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-// import { BiMenu } from "react-icons/bi"; // import menu icon
 import { BiHomeAlt, BiUser } from "react-icons/bi";
 import { BsBriefcase, BsChatSquareText } from "react-icons/bs";
 import { FaClipboardCheck } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Nav = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // state variable to track menu open/close
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Function to close the menu toggle when a menu item is clicked
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -88,7 +92,7 @@ const Nav = () => {
 
       {/* Mobile Navbar - shown when menu toggle is clicked */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-black/20 backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 text-2xl text-white/50 items-center">
+        <div className="lg:hidden bg-black/20 backdrop-blur-2xl  max-w-[560px] mx-auto px-5 text-2xl text-white/50 items-center">
           <Link
             to="home"
             activeClass="active"
@@ -96,6 +100,7 @@ const Nav = () => {
             spy={true}
             offset={-200}
             className="cursor-pointer block py-3"
+            onClick={closeMenu}
           >
             Home
           </Link>
@@ -105,6 +110,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className="cursor-pointer block py-3"
+            onClick={closeMenu}
           >
             About
           </Link>
@@ -114,6 +120,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className="cursor-pointer block py-3"
+            onClick={closeMenu}
           >
             Services
           </Link>
@@ -123,6 +130,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className="cursor-pointer block py-3"
+            onClick={closeMenu}
           >
             Work
           </Link>
@@ -132,6 +140,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             className="cursor-pointer block py-3"
+            onClick={closeMenu}
           >
             Contact
           </Link>
