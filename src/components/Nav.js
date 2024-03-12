@@ -91,7 +91,6 @@ const Nav = () => {
       </div>
 
 
-
       {/* added menu icon and modified  */}
 
       {/* Mobile Navbar - shown when menu toggle is clicked */}
