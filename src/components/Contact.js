@@ -27,7 +27,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Location</h3>
-                <p className="text-gray-400">Nardingdi, Dhaka, Bangladesh</p>
+                <p className="text-gray-400">Dhaka, Bangladesh</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Social Media</h3>

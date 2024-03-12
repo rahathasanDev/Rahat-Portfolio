@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/avatar.svg";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaDribbble, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -22,7 +22,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
             >
-            
+
             </motion.h1>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -77,14 +77,18 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaYoutube></FaYoutube>
+
+              <a href="https://github.com/rahathasanDev" className="text-gray-400 hover:text-blue-500">
+                <FaGithub size={24} />
               </a>
-              <a href="#">
-                <FaGithub></FaGithub>
+              <a href="https://www.facebook.com/rahathasan.coder" className="text-gray-400 hover:text-blue-500">
+                <FaFacebook size={24} />
               </a>
-              <a href="#">
-                <FaDribbble></FaDribbble>
+              <a href="https://www.instagram.com/rahathasan.coder/" className="text-gray-400 hover:text-blue-500">
+                <FaInstagram size={24} />
+              </a>
+              <a href="https://www.linkedin.com/in/rahat-hasan-coder-365d7w/" className="text-gray-400 hover:text-blue-500">
+                <FaLinkedin size={24} />
               </a>
             </motion.div>
           </div>
