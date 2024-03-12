@@ -90,6 +90,10 @@ const Nav = () => {
         </Link>
       </div>
 
+
+
+      {/* added menu icon and modified  */}
+
       {/* Mobile Navbar - shown when menu toggle is clicked */}
       {isMenuOpen && (
         <div className="lg:hidden bg-black/20 backdrop-blur-2xl  max-w-[560px] mx-auto px-5 text-2xl text-white/50 items-center">

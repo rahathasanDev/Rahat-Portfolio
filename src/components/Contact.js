@@ -6,30 +6,25 @@ const Contact = () => {
   return (
     <div className='section' id='contact'>
       <div className="container mx-auto">
-        <motion.h1
+        <motion.div
           variants={fadeIn("up", 0.1)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-
+          viewport={{ once: false, amount: 0.1 }}
         >
           <h2 className="text-3xl font-semibold mb-4">Contact Us :</h2>
           <div className="grid grid-cols-1  gap-6">
             <div>
               <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-gray-400">Rahat@example.com</p>
+              <p className="text-gray-400">rahathasan2987@gmail.com</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">Phone Number</h3>
-              <p className="text-gray-400">123-456-7890</p>
+              <p className="text-gray-400">01744209241</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">Location</h3>
-              <p className="text-gray-400">123 Main Street, City, Country</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Opening Hours</h3>
-              <p className="text-gray-400">Monday - Friday: 9:00 AM - 5:00 PM</p>
+              <p className="text-gray-400">Nardingdi, Dhaka, Bangladesh</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">Social Media</h3>
@@ -55,10 +50,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-
-        </motion.h1>
-
+        </motion.div>
       </div>
     </div>
   );
